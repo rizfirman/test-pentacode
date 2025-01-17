@@ -12,11 +12,11 @@ export default {
   ],
   theme: {
     extend: {
-   
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        Gilroy: ['Gilroy', 'sans-serif'],
       },
     },
   },
   plugins: [],
-};
+}
