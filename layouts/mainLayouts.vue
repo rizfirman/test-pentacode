@@ -1,92 +1,127 @@
 <template>
   <div>
+    <!-- Navbar -->
     <nav
-      class="flex w-full items-center justify-between border border-black lg:h-[83px]"
+      class="sticky top-0 z-50 grid grid-cols-12 items-center border border-black bg-white lg:h-[83px]"
     >
-      <!-- Burger Menu for Mobile/Tablet -->
+      <!-- Left Section -->
+      <div class="hidden lg:col-span-3 lg:grid">
+        <div class="grid grid-cols-12">
+          <div class="col-span-6">
+            <nuxt-link to="/">
+              <div
+                class="grid h-[83px] items-center justify-center border-r border-black"
+              >
+                <p class="font-Gilroy text-base font-medium">Shop</p>
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="col-span-6">
+            <nuxt-link to="/">
+              <div
+                class="grid h-[83px] items-center justify-center border-r border-black"
+              >
+                <p class="font-Gilroy text-base font-medium">Contact</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Section -->
+      <div class="col-span-6" />
+
+      <!-- Right Section -->
+      <div class="hidden lg:col-span-3 lg:grid">
+        <div class="grid grid-cols-12">
+          <div class="col-span-6">
+            <nuxt-link to="/">
+              <div
+                class="grid h-[83px] items-center justify-center border-l border-black"
+              >
+                <p class="font-Gilroy text-base font-medium">Sign in</p>
+              </div>
+            </nuxt-link>
+          </div>
+          <div class="col-span-6">
+            <nuxt-link to="/">
+              <div
+                class="grid h-[83px] items-center justify-center border-l border-black"
+              >
+                <p class="font-Gilroy text-base font-medium">Cart</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile/Tablet View -->
       <div
-        class="flex h-[56px] w-[56px] items-center justify-center border-r border-black lg:hidden"
+        class="col-span-12 grid grid-cols-[auto,1fr,auto] items-center lg:hidden"
       >
+        <!-- Burger Menu -->
         <button
-          class="flex h-[50px] w-[50px] items-center justify-center"
+          class="grid h-[50px] w-[50px] items-center justify-center border-r border-black"
           @click="toggleMenu"
         >
           <Icon name="material-symbols:menu" size="24" />
         </button>
-      </div>
 
-      <!-- Center Section (Desktop View) -->
-      <div class="hidden lg:flex">
-        <nuxt-link to="/">
-          <div
-            class="flex h-[83px] w-[180px] items-center justify-center border-r border-black"
-          >
-            <p class="font-Gilroy text-base font-medium">Shop</p>
-          </div>
-        </nuxt-link>
+        <!-- Center Section (Empty) -->
+        <div />
 
-        <nuxt-link to="/">
-          <div
-            class="flex h-[83px] w-[180px] items-center justify-center border-r border-black"
-          >
-            <p class="font-Gilroy text-base font-medium">Contact</p>
-          </div>
-        </nuxt-link>
-      </div>
-
-      <!-- Right Section (Desktop View) -->
-      <div class="hidden lg:flex">
-        <nuxt-link to="/">
-          <div
-            class="flex h-[83px] w-[180px] items-center justify-center border-l border-r border-black"
-          >
-            <p class="font-Gilroy text-base font-medium">Sign in</p>
-          </div>
-        </nuxt-link>
-
-        <nuxt-link to="/">
-          <div
-            class="flex h-[83px] w-[180px] items-center justify-center border-black"
-          >
-            <p class="font-Gilroy text-base font-medium">Cart</p>
-          </div>
-        </nuxt-link>
-      </div>
-
-      <!-- Cart Icon for Mobile/Tablet -->
-      <div
-        class="flex h-[56px] w-[56px] items-center justify-center border-l border-black lg:hidden"
-      >
+        <!-- Cart Icon -->
         <nuxt-link to="/cart">
-          <Icon name="material-symbols:shopping-cart" size="24" />
+          <div
+            class="grid h-[50px] w-[50px] items-center justify-center border-l border-black"
+          >
+            <Icon name="material-symbols:shopping-cart" size="24" />
+          </div>
         </nuxt-link>
       </div>
     </nav>
 
-    <!-- Burger Menu Dropdown -->
+    <!-- Dropdown Menu for Mobile/Tablet -->
     <div
       v-if="isMenuOpen"
       class="absolute left-0 top-[60px] z-10 w-full border border-black bg-white lg:hidden"
     >
-      <div class="flex flex-col items-center">
-        <nuxt-link to="/" class="w-full border-b border-black py-4 text-center">
-          Shop
-        </nuxt-link>
-        <nuxt-link to="/" class="w-full border-b border-black py-4 text-center">
-          Contact
-        </nuxt-link>
-        <nuxt-link to="/" class="w-full border-b border-black py-4 text-center">
-          Sign in
-        </nuxt-link>
-        <nuxt-link to="/" class="w-full border-b border-black py-4 text-center">
-          Cart
-        </nuxt-link>
-      </div>
+      <nuxt-link
+        to="/"
+        class="grid w-full border-b border-black py-4 text-center"
+      >
+        Shop
+      </nuxt-link>
+      <nuxt-link
+        to="/"
+        class="grid w-full border-b border-black py-4 text-center"
+      >
+        Contact
+      </nuxt-link>
+      <nuxt-link
+        to="/"
+        class="grid w-full border-b border-black py-4 text-center"
+      >
+        Sign in
+      </nuxt-link>
+      <nuxt-link
+        to="/"
+        class="grid w-full border-b border-black py-4 text-center"
+      >
+        Cart
+      </nuxt-link>
     </div>
+
+    <!-- Body Slot -->
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
+  import { ref } from 'vue'
+
   const isMenuOpen = ref(false)
 
   const toggleMenu = () => {
