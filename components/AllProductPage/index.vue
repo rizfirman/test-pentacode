@@ -6,11 +6,11 @@
     >
       <div class="p-5 lg:px-16">
         <div>
-          <p class="font-Gilroy text-[40px] md:text-[67px] md:font-semibold">
+          <p class="font-Gilroy text-[40px] xl:text-[67px] xl:font-semibold">
             Kyiv
           </p>
           <div class="flex">
-            <p class="font-Gilroy text-[40px] md:text-[67px] md:font-semibold">
+            <p class="font-Gilroy text-[40px] xl:text-[67px] xl:font-semibold">
               LuxeBouquets
             </p>
             <span class="text-[40px]">®</span>
