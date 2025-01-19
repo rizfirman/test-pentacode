@@ -25,3 +25,7 @@ npm run dev
 # screen record
 
 https://www.loom.com/share/1f8d3193dbb0423f8a3d2c2367afc17c?sid=4879f907-5bd6-4804-bcbe-7c13ca047fd7
+
+# deploy site
+
+https://pentacode-test.netlify.app/
