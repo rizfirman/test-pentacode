@@ -102,8 +102,8 @@
       </div>
     </div>
 
-    <div>
-      <div class="col-span-12 grid xl:hidden">
+    <div class="block lg:hidden">
+      <div class="col-span-12 grid lg:hidden">
         <nuxt-img src="images/contact-us.png" class="h-full w-full" />
       </div>
 

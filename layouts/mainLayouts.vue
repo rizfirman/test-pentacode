@@ -116,6 +116,190 @@
     <main>
       <slot />
     </main>
+
+    <div class="hidden grid-cols-12 border border-black xl:grid">
+      <div class="font-Gilroy col-span-3 border-r border-black">
+        <div class="p-10">
+          <p>
+            Remember to offer beautiful flowers from Kyiv LuxeBouquets
+            Valentines Day, Mothers Day, Christmas... Reminds you 7 days before.
+            No spam or sharing your address
+          </p>
+          <!-- eslint-disable-next-line vue/html-self-closing -->
+          <input
+            type="email"
+            class="mt-5 h-[56px] w-[272px] border border-gray-500 pl-5"
+            placeholder="Your Email"
+          />
+          <button class="mt-2 h-[56px] w-[272px] border bg-black text-white">
+            REMIND
+          </button>
+        </div>
+      </div>
+      <div class="font-Gilroy col-span-3 border-r border-black">
+        <div class="p-10">
+          <p class="text-[21px] font-medium text-[#808080]">Contact us</p>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">Address</p>
+            <p class="text-base font-medium">15/4 Khreshchatyk Street, Kyiv</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">Phone</p>
+            <p class="text-base font-medium">+380980099777</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">General Enquiry:</p>
+            <p class="text-base font-medium">Kiev.Florist.Studio@gmail.com</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-[21px] font-medium text-[#808080]">Follow us</p>
+            <div class="mt-5 flex items-center gap-5">
+              <Icon name="hugeicons:instagram" size="18" />
+              <Icon name="hugeicons:pinterest" size="18" />
+              <Icon name="iconoir:facebook" size="18" />
+              <Icon name="hugeicons:twitter" size="18" />
+              <Icon name="hugeicons:telegram" size="18" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="font-Gilroy col-span-3 border-r border-black">
+        <div class="p-10">
+          <div>
+            <p class="text-[21px] font-medium text-[#808080]">Shop</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">All Product</p>
+              <p class="mt-1 text-base font-medium">Fresh Flowers</p>
+              <p class="mt-1 text-base font-medium">Dried Flowers</p>
+              <p class="mt-1 text-base font-medium">Live Plants</p>
+              <p class="mt-1 text-base font-medium">Designer Vases</p>
+              <p class="mt-1 text-base font-medium">Aroma Candles</p>
+              <p class="mt-1 text-base font-medium">Freshener Diffuser</p>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-[21px] font-medium text-[#808080]">Service</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">Flower Subcription</p>
+              <p class="mt-1 text-base font-medium">Wedding & Event Decor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="font-Gilroy col-span-3 border-r border-black">
+        <div class="p-10">
+          <div>
+            <p class="text-[21px] font-medium text-[#808080]">About us</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">Our story</p>
+              <p class="mt-1 text-base font-medium">Blog</p>
+              <div class="mt-5">
+                <p class="mt-1 text-base font-medium">Shipping & returns</p>
+                <p class="mt-1 text-base font-medium">Terms & conditions</p>
+                <p class="mt-1 text-base font-medium">Privacy policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tablet -->
+
+    <div
+      class="grid-cols-12 border border-black sm:hidden md:grid lg:grid xl:hidden"
+    >
+      <div class="font-Gilroy col-span-6 border-b border-r border-black">
+        <div class="p-10">
+          <p>
+            Remember to offer beautiful flowers from Kyiv LuxeBouquets
+            Valentines Day, Mothers Day, Christmas... Reminds you 7 days before.
+            No spam or sharing your address
+          </p>
+          <!-- eslint-disable-next-line vue/html-self-closing -->
+          <input
+            type="email"
+            class="mt-5 h-[56px] w-[272px] border border-gray-500 pl-5"
+            placeholder="Your Email"
+          />
+          <button class="mt-2 h-[56px] w-[272px] border bg-black text-white">
+            REMIND
+          </button>
+        </div>
+      </div>
+      <div class="font-Gilroy col-span-6 border-r border-black">
+        <div class="p-10">
+          <p class="text-[21px] font-medium text-[#808080]">Contact us</p>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">Address</p>
+            <p class="text-base font-medium">15/4 Khreshchatyk Street, Kyiv</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">Phone</p>
+            <p class="text-base font-medium">+380980099777</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm font-normal text-[#808080]">General Enquiry:</p>
+            <p class="text-base font-medium">Kiev.Florist.Studio@gmail.com</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-[21px] font-medium text-[#808080]">Follow us</p>
+            <div class="mt-5 flex items-center gap-5">
+              <Icon name="hugeicons:instagram" size="18" />
+              <Icon name="hugeicons:pinterest" size="18" />
+              <Icon name="iconoir:facebook" size="18" />
+              <Icon name="hugeicons:twitter" size="18" />
+              <Icon name="hugeicons:telegram" size="18" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid-cols-12 border border-black sm:hidden md:grid lg:grid xl:hidden"
+    >
+      <div class="font-Gilroy col-span-6 border-b border-r border-black">
+        <div class="p-10">
+          <div>
+            <p class="text-[21px] font-medium text-[#808080]">Shop</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">All Product</p>
+              <p class="mt-1 text-base font-medium">Fresh Flowers</p>
+              <p class="mt-1 text-base font-medium">Dried Flowers</p>
+              <p class="mt-1 text-base font-medium">Live Plants</p>
+              <p class="mt-1 text-base font-medium">Designer Vases</p>
+              <p class="mt-1 text-base font-medium">Aroma Candles</p>
+              <p class="mt-1 text-base font-medium">Freshener Diffuser</p>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <p class="text-[21px] font-medium text-[#808080]">Service</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">Flower Subcription</p>
+              <p class="mt-1 text-base font-medium">Wedding & Event Decor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="font-Gilroy col-span-6 border-r border-black">
+        <div class="p-10">
+          <div>
+            <p class="text-[21px] font-medium text-[#808080]">About us</p>
+            <div class="mt-5">
+              <p class="text-base font-medium">Our story</p>
+              <p class="mt-1 text-base font-medium">Blog</p>
+              <div class="mt-5">
+                <p class="mt-1 text-base font-medium">Shipping & returns</p>
+                <p class="mt-1 text-base font-medium">Terms & conditions</p>
+                <p class="mt-1 text-base font-medium">Privacy policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
