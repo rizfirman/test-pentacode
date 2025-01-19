@@ -2,7 +2,7 @@
   <div class="grid grid-cols-12" @wheel="handleScroll">
     <!-- Left Side -->
     <div
-      class="left-side col-span-12 border border-b-0 border-black lg:col-span-6 lg:h-[calc(100vh-83px)]"
+      class="left-side col-span-12 border border-b-0 border-black xl:col-span-6 xl:h-[calc(100vh-83px)]"
     >
       <div class="p-5 lg:px-16">
         <div>
@@ -45,7 +45,7 @@
     <!-- Right Side -->
     <div
       ref="rightSide"
-      class="right-side col-span-12 h-[calc(100vh-83px)] overflow-y-scroll border lg:col-span-6"
+      class="right-side col-span-12 h-[calc(100vh-83px)] overflow-y-scroll border xl:col-span-6"
     >
       <div
         v-for="menuData in data"

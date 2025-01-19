@@ -2,7 +2,7 @@
   <div>
     <div
       ref="aboutUsSection"
-      class="hidden h-[calc(100vh-83px)] grid-cols-12 border border-black lg:grid"
+      class="hidden h-[calc(100vh-83px)] grid-cols-12 border border-black xl:grid"
     >
       <!-- Left Section -->
       <div class="col-span-6 border-r border-black p-16">
@@ -38,14 +38,16 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-12 lg:hidden">
+    <div class="grid grid-cols-12 xl:hidden">
       <!-- Left Section -->
-      <div class="col-span-12 border-y border-black p-16">
-        <p class="font-Gilroy text-[50px] font-semibold">About us</p>
+      <div class="col-span-12 border-y border-black p-10">
+        <p class="font-Gilroy text-[34px] font-semibold xl:text-[50px]">
+          About us
+        </p>
       </div>
 
       <!-- Right Section -->
-      <div class="col-span-12 h-screen border-b border-black md:h-[559px]">
+      <div class="col-span-12 h-[607px] border-b border-black md:h-[559px]">
         <div class="font-Gilroy p-5 md:p-20">
           <p class="text-sm font-normal">OUR STORY</p>
           <p class="mt-5 text-[38px] font-medium">Kyiv LuxeBouquets</p>
@@ -61,7 +63,7 @@
             by sending flowers, plants and gifts the same or next day. Ordering
             flowers online has never been easier.
           </p>
-          <button class="mt-5 border border-black px-10 py-2">
+          <button class="mt-5 w-full border border-black px-10 py-2 md:w-auto">
             LEARN MORE
           </button>
         </div>
