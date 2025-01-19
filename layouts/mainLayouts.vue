@@ -168,7 +168,9 @@
           <div>
             <p class="text-[21px] font-medium text-[#808080]">Shop</p>
             <div class="mt-5">
-              <p class="text-base font-medium">All Product</p>
+              <nuxt-link to="/all-product" class="text-base font-medium">
+                All Product
+              </nuxt-link>
               <p class="mt-1 text-base font-medium">Fresh Flowers</p>
               <p class="mt-1 text-base font-medium">Dried Flowers</p>
               <p class="mt-1 text-base font-medium">Live Plants</p>
@@ -264,7 +266,9 @@
           <div>
             <p class="text-[21px] font-medium text-[#808080]">Shop</p>
             <div class="mt-5">
-              <p class="text-base font-medium">All Product</p>
+              <nuxt-link to="/all-product" class="text-base font-medium"
+                >All Product</nuxt-link
+              >
               <p class="mt-1 text-base font-medium">Fresh Flowers</p>
               <p class="mt-1 text-base font-medium">Dried Flowers</p>
               <p class="mt-1 text-base font-medium">Live Plants</p>
