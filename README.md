@@ -24,4 +24,4 @@ npm run dev
 
 # screen record
 
-https://www.loom.com/share/fc25f1a627084006924cf5450bd30b29?sid=1eb81e7d-297a-4636-bc87-d2f4bf7fb305
+https://www.loom.com/share/1f8d3193dbb0423f8a3d2c2367afc17c?sid=4879f907-5bd6-4804-bcbe-7c13ca047fd7
